@@ -1,0 +1,50 @@
+:root {
+  --background: white;
+  --check: black;
+  --circle: white;
+}
+.circle {
+  cursor: pointer;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 22px;
+  height: 22px;
+  background: var(--circle);
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+.checkbox:checked+.ticket .circle {
+  transform: translateX(34px);
+}
+.dark {
+  --background: black;
+  --check: white;
+  --circle: black;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.dark-mode {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: var(--background);
+  transition: .5s;
+}
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+.ticket {
+  width: 60px;
+  height: 26px;
+  background: var(--check);
+  border-radius: 50px;
+  padding: 5px;
+  position: relative;
+}
