@@ -1,26 +1,26 @@
 :root {
   --background: white;
-  --check: black;
-  --circle: white;
+  --check: url("img/dbg.jpg");
+  --circle: url("img/sun.jpg");
 }
 .circle {
   cursor: pointer;
   position: absolute;
   top: 2px;
   left: 2px;
-  width: 22px;
-  height: 22px;
+  width: 55px;
+  height: 55px;
   background: var(--circle);
   border-radius: 50%;
   transition: transform 0.2s linear;
 }
 .checkbox:checked+.ticket .circle {
-  transform: translateX(34px);
+  transform: translateX(101px);
 }
 .dark {
   --background: black;
-  --check: white;
-  --circle: black;
+  --check: url("img/nbg.jpg");
+  --circle: url("img/moon.jpg");
 }
 * {
   margin: 0;
@@ -41,8 +41,8 @@
   position: absolute;
 }
 .ticket {
-  width: 60px;
-  height: 26px;
+  width: 160px;
+  height: 60px;
   background: var(--check);
   border-radius: 50px;
   padding: 5px;
